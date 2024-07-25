@@ -1,0 +1,5 @@
+Tooltip_FR = {
+    Tooltip_pkszTH_pager = "Équipez comme objet principal ou secondaire pour utiliser.",
+    Tooltip_pkszEpic_Item = "-- C'est très bien --",
+    Tooltip_pkszEpic_Item_info = "Cet indice est effacé lors de la déconnexion",
+}

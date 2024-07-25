@@ -1,0 +1,5 @@
+ItemName_FR = {
+    ItemName_pkszTHitem.THpagerBlue = "Pager de poche (Bleu)",
+    ItemName_pkszTHitem.THpagerRed = "Pager de poche (Rouge)",
+    ItemName_pkszTHitem.THpagerGray = "Pager de poche (Gris)",
+}

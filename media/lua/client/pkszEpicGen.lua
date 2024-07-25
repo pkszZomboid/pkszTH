@@ -16,10 +16,12 @@ pkszEpicGen.doGenerate = function(item)
 	end
 
 	local getName = item:getName()
-	local getType = item:getType()
 	local getFullType = item:getFullType()
-	local getCategory = item:getCategory()
 	local getModID = item:getModID()
+    local itemModData = item:getModData()
+    if not itemModData["pksz"] then
+        itemModData["pksz"] = {}
+    end
 
 	local thisType = pkszEpicLib.getItemType(item)
 
@@ -65,12 +67,14 @@ pkszEpicGen.doGenerate = function(item)
 			item:setAimingTime(modifi.value)
 			effectText = effectText.."<br>AimingTime + "..modifi.mod
 			logText = pkszEpicBuildLogText(logText,"+Aiming",modifi.mod)
+            itemModData["pksz"]["setAimingTime"] = modifi.mod
 
 			-- getRecoilDelay Lower is better
-			local modifi = pkszEpicGetValue(item:getRecoilDelay(),minMultiplier,maxMultiplier,1,"i","m")
+			modifi = pkszEpicGetValue(item:getRecoilDelay(),minMultiplier,maxMultiplier,1,"i","m")
 			item:setRecoilDelay(modifi.value)
 			effectText = effectText.."<br>RecoilDelay - "..modifi.mod
 			logText = pkszEpicBuildLogText(logText,"-Recoil",modifi.mod)
+            itemModData["pksz"]["setRecoilDelay"] = modifi.mod
 
 		else
 
@@ -89,6 +93,7 @@ pkszEpicGen.doGenerate = function(item)
 			end
 			effectText = effectText.."<br>MaxRange + "..modifi.mod
 			logText = pkszEpicBuildLogText(logText,"+Range",modifi.mod)
+            itemModData["pksz"]["setMaxRange"] = modifi.mod
 		end
 
 		-- setMaxDamage
@@ -97,7 +102,7 @@ pkszEpicGen.doGenerate = function(item)
 		item:setMaxDamage(modifi.value)
 		effectText = effectText.."<br>MaxDamage + "..modifi.mod
 		logText = pkszEpicBuildLogText(logText,"+Damage",modifi.mod)
-
+        itemModData["pksz"]["setMaxDamage"] = modifi.mod
 	end
 
 -- cloth
@@ -123,10 +128,11 @@ pkszEpicGen.doGenerate = function(item)
 		item:setCapacity(modifi.value)
 		effectText = effectText.."<br>Capacity + "..modifi.mod
 		logText = pkszEpicBuildLogText(logText,"+Capa",modifi.mod)
+        itemModData["pksz"]["setCapacity"] = modifi.mod
 
 		-- setWeightReduction
 		if weightReduction > 0 then
-			local modifi = pkszEpicGetValue(item:getWeightReduction(),0,weightReduction,1,"i","r")
+			modifi = pkszEpicGetValue(item:getWeightReduction(),0,weightReduction,1,"i","r")
 			if modifi.value == item:getWeightReduction() then
 				modifi.value = modifi.value + 1
 				modifi.mod = 1
@@ -134,6 +140,7 @@ pkszEpicGen.doGenerate = function(item)
 			item:setWeightReduction(modifi.value)
 			effectText = effectText.."<br>WeightReduction + "..modifi.mod
 			logText = pkszEpicBuildLogText(logText,"+WeightReduction",modifi.mod)
+            itemModData["pksz"]["setWeightReduction"] = modifi.mod
 		end
 
 	end

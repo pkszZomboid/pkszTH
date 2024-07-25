@@ -1,0 +1,17 @@
+IG_UI_FR = {
+    IGUI_pkszTH_toggleMuteON = "Mode muet activé",
+    IGUI_pkszTH_toggleMuteOFF = "Mode muet désactivé",
+
+    IGUI_pkszTH_Initializ = "Initialisation...",
+    IGUI_pkszTH_PleaseWait = "Veuillez patienter un moment et vérifier à nouveau.",
+    IGUI_pkszTH_CheckYourMap = "----- Vérifiez votre carte !! -----",
+
+    IGUI_pkszTH_closeInfo = "Recherche en cours pour la prochaine mission.",
+
+    IGUI_pkszTH_restart1 = "Nous avons perdu des informations",
+    IGUI_pkszTH_restart2 = "Je recherche de nouvelles informations. Veuillez patienter",
+    IGUI_pkszTH_clearMission = "---- Terminer la mission ----",
+
+    IGUI_ItemEditor_Capacity = "Capacité",
+    IGUI_ItemEditor_WeightReduction = "Réduction de poids",
+}

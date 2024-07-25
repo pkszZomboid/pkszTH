@@ -1,0 +1,85 @@
+Sandbox_FR = {
+
+    Sandbox_pkszTH = "Chasse au trésor",
+
+    Sandbox_pkszTH_eventSelectFileVer = "Version du fichier d'événement",
+    Sandbox_pkszTH_eventSelectFileVer_tooltip = "Sélectionnez la version du fichier d'événement<br>Les utilisateurs qui ne possèdent pas une version précédente auront les mêmes fichiers installés que la dernière version.<br>En multiserveur, rechargez le fichier d'événement au prochain tick.",
+
+    Sandbox_pkszTH_eventSelectFileVerEnum_option1 = "pkszTHv202403",
+    Sandbox_pkszTH_eventSelectFileVerEnum_option2 = "pkszTHvE202403",
+
+    Sandbox_pkszTH_eventStartChance = "Chance de démarrage de l'événement",
+    Sandbox_pkszTH_eventStartChance_tooltip = "0-9 Plus le chiffre est élevé, plus le prochain événement survient rapidement",
+
+    Sandbox_pkszTH_eventStartWaitTick = "Tick d'attente de l'événement",
+    Sandbox_pkszTH_eventStartWaitTick_tooltip = "Temps d'attente minimum jusqu'à ce que le prochain événement se produise (par tranche de 10 minutes en jeu)",
+
+    Sandbox_pkszTH_eventDisabled = "Événement désactivé",
+    Sandbox_pkszTH_eventDisabled_tooltip = "Désactivé par défaut.<br>L'événement se poursuivra en décochant cette option.",
+
+    Sandbox_pkszTH_eventTickAverage = "Moyenne temporelle",
+    Sandbox_pkszTH_eventTickAverage_tooltip = "La limite de temps de l'événement est ajustée au taux où un jour en jeu passe en deux heures.<br>Plus le nombre est élevé, plus la limite de temps est longue.",
+
+    Sandbox_pkszTH_walkSpeedChange = "Activer le changement de vitesse de marche",
+    Sandbox_pkszTH_walkSpeedChange_tooltip = "Vrai, cela débloquera la personnalisation de la vitesse de marche des zombies.<br>Lorsque Faux, la vitesse de marche des zombies suit les paramètres du bac à sable.",
+
+    Sandbox_pkszTH_eventLogDivision = "Sortie LOG vers la console",
+    Sandbox_pkszTH_eventLogDivision_tooltip = "Les journaux du serveur sont sortis dans un fichier dédié chaque fois que possible,<br>mais si coché, sortie vers la console en même temps.",
+
+    Sandbox_pkszTH_eventIDanchor = "ID de l'événement à fixer",
+    Sandbox_pkszTH_eventIDanchor_tooltip = "Fixez l'ID de l'événement<br>Seuls les événements avec l'ID entré se produiront.",
+
+    Sandbox_pkszTH_PagerDropRate = "Taux de chute de l'appareil pager",
+    Sandbox_pkszTH_PagerDropRate_tooltip = "Probabilité d'obtenir un appareil pager d'un zombie.",
+
+    Sandbox_pkszTH_PagerDropRateEnum_option1 = "extrêmement rare (1/1000)",
+    Sandbox_pkszTH_PagerDropRateEnum_option2 = "très rare (1/500)",
+    Sandbox_pkszTH_PagerDropRateEnum_option3 = "rare (1/100)",
+    Sandbox_pkszTH_PagerDropRateEnum_option4 = "normal (1/50)",
+    Sandbox_pkszTH_PagerDropRateEnum_option5 = "commun (1/25)",
+    Sandbox_pkszTH_PagerDropRateEnum_option6 = "Debug (1/2)",
+
+    Sandbox_pkszEpic_nil = "",
+
+    Sandbox_pkszEpic = "API Générateur d'Objets Uniques",
+
+    Sandbox_pkszEpic_Disabled = "API désactivée",
+    Sandbox_pkszEpic_Disabled_tooltip = "Si coché, la génération d'objets uniques sera arrêtée.",
+
+    Sandbox_pkszEpic_AdminEpicConvert = "Conversion admin en Épique",
+    Sandbox_pkszEpic_AdminEpicConvert_tooltip = "Conversion admin en objets Épiques à tout moment.<br>(Armes, vêtements, sacs)",
+
+    Sandbox_pkszEpic_SpecImproveMultiplierMin = "Amélioration minimum des spécifications",
+    Sandbox_pkszEpic_SpecImproveMultiplierMin_tooltip = "Définissez la valeur minimale de l'amélioration des spécifications<br>Ne s'applique pas aux objets déjà générés",
+
+    Sandbox_pkszEpic_SpecImproveMultiplierMinEnum_option1 = "0%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMinEnum_option2 = "5%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMinEnum_option3 = "10%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMinEnum_option4 = "15%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMinEnum_option5 = "20%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMinEnum_option6 = "25%",
+
+    Sandbox_pkszEpic_SpecImproveMultiplierMax = "Amélioration maximum des spécifications",
+    Sandbox_pkszEpic_SpecImproveMultiplierMax_tooltip = "Définissez la valeur maximale de l'amélioration des spécifications<br>Veuillez rendre la valeur plus grande que la valeur minimale",
+
+    Sandbox_pkszEpic_SpecImproveMultiplierMaxEnum_option1 = "5%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMaxEnum_option2 = "10%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMaxEnum_option3 = "15%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMaxEnum_option4 = "25%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMaxEnum_option5 = "30%",
+    Sandbox_pkszEpic_SpecImproveMultiplierMaxEnum_option6 = "50%",
+
+    Sandbox_pkszEpic_weightReduction = "Réduction maximale du poids",
+    Sandbox_pkszEpic_weightReduction_tooltip = "La réduction du poids augmente selon une valeur variable indépendamment du type de sac.<br>Augmente aléatoirement dans la valeur définie de 0.",
+
+    Sandbox_pkszEpic_weightReductionEnum_option1 = "0",
+    Sandbox_pkszEpic_weightReductionEnum_option2 = "1",
+    Sandbox_pkszEpic_weightReductionEnum_option3 = "2",
+    Sandbox_pkszEpic_weightReductionEnum_option4 = "3",
+    Sandbox_pkszEpic_weightReductionEnum_option5 = "4",
+    Sandbox_pkszEpic_weightReductionEnum_option6 = "5",
+
+    Sandbox_pkszEpic_ApplyToBags = "Appliquer l'Amélioration des spécifications aux sacs",
+    Sandbox_pkszEpic_ApplyToBags_tooltip = "L'amélioration des performances des sacs est fixée de 0% à 10% (augmente au moins de 1).<br>Si coché, la valeur de 'Amélioration des spécifications' sera également appliquée au sac.<br>La réduction du poids ignore ce paramètre",
+
+}

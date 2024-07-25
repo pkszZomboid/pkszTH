@@ -1,0 +1,5 @@
+ContextMenu_FR = {
+	ContextMenu_pkszTH_pagerMute = "Muet :",
+	ContextMenu_pkszTH_checkMonitor = "Vérifier le moniteur",
+	ContextMenu_pkszTH_pagerBroken = "Ne fonctionne pas ? / essayez de redémarrer Zomboid (pas un serveur)",
+}

@@ -12,4 +12,7 @@ IG_UI_EN = {
 	IGUI_pkszTH_restart1 = "We lost information",
 	IGUI_pkszTH_restart2 = "I'm looking for new information. Please wait",
 
+    IGUI_ItemEditor_Capacity = "Capacity",
+    IGUI_ItemEditor_WeightReduction = "Weight Reduction",
+
 }

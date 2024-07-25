@@ -12,5 +12,7 @@ IG_UI_EN = {
 	IGUI_pkszTH_restart1 = "担当者の変更により、現在の情報が失われました",
 	IGUI_pkszTH_restart2 = "新しい情報を捜索中です",
 
+    IGUI_ItemEditor_Capacity = "Capacity",
+    IGUI_ItemEditor_WeightReduction = "Weight Reduction",
 
 }
